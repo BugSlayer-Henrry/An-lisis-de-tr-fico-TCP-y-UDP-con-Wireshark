@@ -51,44 +51,55 @@ Después de detener la captura, puedes guardar el archivo de captura para un an�
 ## Tareas
 
 ### Captura de Tráfico TCP
-1. Haga clic derecho en el ícono de Wireshark y seleccione **Ejecutar como Administrador** para iniciar una nueva sesión de captura.![image](https://github.com/user-attachments/assets/36747f1b-1956-4592-a7ce-a911314dda51)
+1. Haga clic derecho en el ícono de Wireshark y seleccione **Ejecutar como Administrador** para iniciar una nueva sesión de captura.
+ ![image](https://github.com/user-attachments/assets/36747f1b-1956-4592-a7ce-a911314dda51)
 
-2. En la barra de filtros, ingrese `tcp` y seleccione **Enter** para filtrar paquetes TCP.![image](https://github.com/user-attachments/assets/8ab64afc-b656-49e2-8b35-90fdd5c764b9)
+2. En la barra de filtros, ingrese `tcp` y seleccione **Enter** para filtrar paquetes TCP.
+ ![image](https://github.com/user-attachments/assets/8ab64afc-b656-49e2-8b35-90fdd5c764b9)
 
 3. Abra un navegador web y visite un sitio web, como [https://www.ibm.com/in-en](https://www.ibm.com/in-en) para generar tráfico TCP.
 4. Detenga la captura después de unos segundos.
 **Capturar datos TCP**
-   - Examina los paquetes capturados. Identifica los paquetes involucrados en el **apretón de manos de tres vías de TCP**, incluyendo SYN, SYN-ACK y ACK. ![image](https://github.com/user-attachments/assets/95dae1a1-8a8f-4f4e-9946-af77328f951d)
+   - Examina los paquetes capturados. Identifica los paquetes involucrados en el **apretón de manos de tres vías de TCP**, incluyendo SYN, SYN-ACK y ACK.
+   -  ![image](https://github.com/user-attachments/assets/95dae1a1-8a8f-4f4e-9946-af77328f951d)
 
-   - Examina el encabezado TCP en busca de números de secuencia, reconocimientos y banderas como SYN y ACK.![image](https://github.com/user-attachments/assets/240d2690-0d3c-4e19-a728-a5fe6c5cda00)
+   - Examina el encabezado TCP en busca de números de secuencia, reconocimientos y banderas como SYN y ACK.
+   - ![image](https://github.com/user-attachments/assets/240d2690-0d3c-4e19-a728-a5fe6c5cda00)
 
 
 ### Captura de Tráfico UDP
-1. En Wireshark, borra la captura anterior y comienza una nueva sesión.![image](https://github.com/user-attachments/assets/6b5b927c-1db0-415d-883a-fbb069d3e0ad)
+1. En Wireshark, borra la captura anterior y comienza una nueva sesión.
+ ![image](https://github.com/user-attachments/assets/6b5b927c-1db0-415d-883a-fbb069d3e0ad)
 
-2. En la barra de filtros, ingresa `udp` y selecciona **Enter** para filtrar los paquetes UDP.![image](https://github.com/user-attachments/assets/9f71ec1e-193f-4259-9482-3d43541748a4)
+2. En la barra de filtros, ingresa `udp` y selecciona **Enter** para filtrar los paquetes UDP.
+ ![image](https://github.com/user-attachments/assets/9f71ec1e-193f-4259-9482-3d43541748a4)
 
-3. Utiliza una aplicación que genere tráfico UDP, como una consulta DNS o un servicio de transmisión de video. Permite que el servicio funcione durante unos segundos.![image](https://github.com/user-attachments/assets/7c0213d1-f2de-4cdc-8747-9bba0471a725)
+3. Utiliza una aplicación que genere tráfico UDP, como una consulta DNS o un servicio de transmisión de video. Permite que el servicio funcione durante unos segundos.
+ ![image](https://github.com/user-attachments/assets/7c0213d1-f2de-4cdc-8747-9bba0471a725)
 
 4. Detén la captura después de unos segundos.
 
 ### Analizando los datos
-1. Examina los paquetes capturados e identifica los puertos de origen y destino.![image](https://github.com/user-attachments/assets/3c2cc022-d9da-4973-8607-f28732055e54)
-
-2. Observa el encabezado UDP para los campos de **longitud** y **suma de verificación**.![image](https://github.com/user-attachments/assets/3070bed2-0acb-45c7-8585-a451aba64c69)
+1. Examina los paquetes capturados e identifica los puertos de origen y destino.
+![image](https://github.com/user-attachments/assets/3c2cc022-d9da-4973-8607-f28732055e54)
+2. Observa el encabezado UDP para los campos de **longitud** y **suma de verificación**.
+![image](https://github.com/user-attachments/assets/3070bed2-0acb-45c7-8585-a451aba64c69)
 
 
 ### Comparar paquetes TCP y UDP
 1. Compara un paquete TCP con un paquete UDP capturado en tareas anteriores.
-2. **Ver un ENCABEZADO TCP**![image](https://github.com/user-attachments/assets/35acee70-2a3e-4f5b-9e04-01f85b1b9340)
+2. **Ver un ENCABEZADO TCP**
+![image](https://github.com/user-attachments/assets/35acee70-2a3e-4f5b-9e04-01f85b1b9340)
 
-3. **Ver un ENCABEZADO UDP**![image](https://github.com/user-attachments/assets/3760ef00-b71f-47dd-ba03-b8853f8e04e3)
+3. **Ver un ENCABEZADO UDP**
+![image](https://github.com/user-attachments/assets/3760ef00-b71f-47dd-ba03-b8853f8e04e3)
 
 4. Observa las diferencias en los encabezados de los paquetes TCP y UDP.
 
 ### Identificar Protocolos Usando TCP
 1. Filtrar las capturas de Wireshark para un puerto TCP específico, como **HTTP (puerto 80)** o **HTTPS (puerto 443)**.
-2. Analizar los paquetes capturados para entender el comportamiento del protocolo.![image](https://github.com/user-attachments/assets/736429ce-5a4f-44c5-9614-734a534417e3)
+2. Analizar los paquetes capturados para entender el comportamiento del protocolo.
+![image](https://github.com/user-attachments/assets/736429ce-5a4f-44c5-9614-734a534417e3)
 
 3. **Ver la salida del tráfico TCP capturado en el puerto UDP 80:**
 
